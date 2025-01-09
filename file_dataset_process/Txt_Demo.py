@@ -1,5 +1,5 @@
 import pandas as pd
-df=pd.read_csv('D:\mhe\GitHub\ML_K224161818\dataset\SalesTransactions.txt',
+df=pd.read_csv(r'D:\mhe\GitHub\ML_K224161818\dataset\SalesTransactions.txt',
                encoding='utf-8',dtype='unicode',
                sep='\t',low_memory=False
                )
