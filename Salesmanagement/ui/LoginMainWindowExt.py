@@ -22,8 +22,9 @@ class LoginMainWindowExt(Ui_MainWindow):
     def xuly_dangnhap(self):
         username=self.lineEdit_username.text()
         password=self.lineEdit_password.text()
+
         #giả lập đăng nhập (hôm sau truy vấn thật trong CSDL)
-        #Goij kết nối đăng nhập trong MySQL
+        #gọi kết nối cơ sở dữ liệu MySQL
         self.nvconnector.connect()
         self.nvlogin=self.nvconnector.dang_nhap(username,password)
         if self.nvlogin!=None:
