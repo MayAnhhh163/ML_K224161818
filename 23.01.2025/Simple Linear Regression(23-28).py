@@ -45,7 +45,7 @@ showGraph(x,y,
           xlabel='Diện tích (m2)',
           ylabel='Giá nhà (tỷ VND)')
 
-###Huấn luyện mô hình hồi quy tuyến tính bằng sklearn
+###Huấn luyện mô hình hồi quy tuyến tính bằng sklearn (slide 25-27)
 import matplotlib.pyplot as plt
 import numpy as np
 from sklearn.linear_model import LinearRegression
