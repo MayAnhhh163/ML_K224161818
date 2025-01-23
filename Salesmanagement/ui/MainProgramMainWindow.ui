@@ -44,8 +44,41 @@
      <height>26</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuH_th_ng">
+    <property name="title">
+     <string>Hệ thống</string>
+    </property>
+    <addaction name="actionthongtintaikhoan"/>
+    <addaction name="actiondoimatkhau"/>
+    <addaction name="actioncauhinhhethong"/>
+    <addaction name="actionthoatphanmem"/>
+   </widget>
+   <addaction name="menuH_th_ng"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionthongtintaikhoan">
+   <property name="text">
+    <string>Thong tin tai khoan</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+I</string>
+   </property>
+  </action>
+  <action name="actiondoimatkhau">
+   <property name="text">
+    <string>Doi mat khau</string>
+   </property>
+  </action>
+  <action name="actioncauhinhhethong">
+   <property name="text">
+    <string>Cau hinh he thong</string>
+   </property>
+  </action>
+  <action name="actionthoatphanmem">
+   <property name="text">
+    <string>Thoat phan mem</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>

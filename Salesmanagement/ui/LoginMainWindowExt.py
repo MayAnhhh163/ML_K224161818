@@ -25,9 +25,11 @@ class LoginMainWindowExt(Ui_MainWindow):
 
         #giả lập đăng nhập (hôm sau truy vấn thật trong CSDL)
         #gọi kết nối cơ sở dữ liệu MySQL
+
         self.nvconnector.connect()
         self.nvlogin=self.nvconnector.dang_nhap(username,password)
         if self.nvlogin!=None:
+        #if username=='admin' and password=='123':
             self.MainWindow.hide()
             self.mainwindow = QMainWindow()
             self.myui = MainProgramMainWindowExt()
