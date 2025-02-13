@@ -20,3 +20,27 @@ class SanPhamConnector(MySQLConnector):
             dssp.append(SanPham(id,masanpham,tensanpham,soluong,dongia,iddanhmuc))
         cursor.close()
         return dssp
+
+    def Lay_ChiTiet(self, id):
+        cursor=self.conn.cursor()
+        sql="select * from sanpham where id = %s"
+        val=(id,)
+        cursor.execute(sql,val)
+        dataset = cursor.fetchone() #lấy 1 dòng
+        sp=None
+        if dataset != None:
+            id,ma,ten,sl,gia,iddm = dataset
+            sp=SanPham(id,ma,ten,sl,gia,iddm)
+        cursor.close()
+        return sp
+
+    def Xoa_SanPham(self,id):
+        cursor = self.conn.cursor()
+        sql = "delete from sanpham where id=%s"
+        val = (id,)
+        cursor.execute(sql, val)
+        self.conn.commit()
+        #số dòng dữ liệu bị ảnh hưởng:
+        result=cursor.rowcount
+        cursor.close()
+        return result

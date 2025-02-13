@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>577</width>
+    <width>783</width>
     <height>568</height>
    </rect>
   </property>
@@ -111,7 +111,7 @@
               </column>
               <column>
                <property name="text">
-                <string>New Column</string>
+                <string>Đơn giá</string>
                </property>
               </column>
               <column>
@@ -324,7 +324,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>577</width>
+     <width>783</width>
      <height>26</height>
     </rect>
    </property>

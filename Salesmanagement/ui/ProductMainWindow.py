@@ -12,7 +12,7 @@ from PyQt6 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(577, 568)
+        MainWindow.resize(783, 568)
         self.centralwidget = QtWidgets.QWidget(parent=MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.verticalLayout_2 = QtWidgets.QVBoxLayout(self.centralwidget)
@@ -122,7 +122,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_2.addLayout(self.verticalLayout)
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(parent=MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 577, 26))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 783, 26))
         self.menubar.setObjectName("menubar")
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QtWidgets.QStatusBar(parent=MainWindow)
@@ -164,7 +164,7 @@ class Ui_MainWindow(object):
         item = self.tableWidgetSanPham.horizontalHeaderItem(3)
         item.setText(_translate("MainWindow", "Số lượng"))
         item = self.tableWidgetSanPham.horizontalHeaderItem(4)
-        item.setText(_translate("MainWindow", "New Column"))
+        item.setText(_translate("MainWindow", "Đơn giá"))
         item = self.tableWidgetSanPham.horizontalHeaderItem(5)
         item.setText(_translate("MainWindow", "Id DM"))
         self.groupBox.setTitle(_translate("MainWindow", "Thông tin chi tiết sản phẩm:"))
