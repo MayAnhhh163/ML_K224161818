@@ -53,7 +53,16 @@
     <addaction name="actioncauhinhhethong"/>
     <addaction name="actionthoatphanmem"/>
    </widget>
+   <widget class="QMenu" name="menuQu_n_l">
+    <property name="title">
+     <string>Quản lý</string>
+    </property>
+    <addaction name="actionQly_sp_danh_mucj"/>
+    <addaction name="actionQly_don_hang"/>
+    <addaction name="actionQly_nhan_vien"/>
+   </widget>
    <addaction name="menuH_th_ng"/>
+   <addaction name="menuQu_n_l"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <action name="actionthongtintaikhoan">
@@ -77,6 +86,21 @@
   <action name="actionthoatphanmem">
    <property name="text">
     <string>Thoat phan mem</string>
+   </property>
+  </action>
+  <action name="actionQly_sp_danh_mucj">
+   <property name="text">
+    <string>Qly sp - danh muc</string>
+   </property>
+  </action>
+  <action name="actionQly_don_hang">
+   <property name="text">
+    <string>Qly don hang</string>
+   </property>
+  </action>
+  <action name="actionQly_nhan_vien">
+   <property name="text">
+    <string>Qly nhan vien</string>
    </property>
   </action>
  </widget>
