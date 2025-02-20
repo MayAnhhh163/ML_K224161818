@@ -1,3 +1,5 @@
+import os
+
 from HousingPricePrediction.conding_pyqt6.HousingPricePredictonMainWindow import Ui_MainWindow
 
 
@@ -6,6 +8,7 @@ class HousingPricePredictionMainWindowExt(Ui_MainWindow):
         super().setupUi(MainWindow)
         self.MainWindow=MainWindow
         self.setupSignalAndSlot()
+        self.populate_comboBox()
 
     def showWindow(self):
         self.MainWindow.show()
@@ -31,4 +34,11 @@ class HousingPricePredictionMainWindowExt(Ui_MainWindow):
         prediction = trainedmodel.predict([[AreaIncome, AreaHouseAge, AreaNumberOfRooms, AreaNumberOfBedrooms, AreaPopulation]])
         print("kết quả =", prediction)
         self.lineEditHousePrice.setText(f'{prediction[0]}')
+
+    def populate_comboBox(self):
+        model_dir = "../trainedmodel"
+        if os.path.exists(model_dir):  # Kiểm tra thư mục có tồn tại không
+            models = sorted(set(f for f in os.listdir(model_dir) if f.endswith(".zip")))  # Loại bỏ trùng lặp và sắp xếp
+            self.comboBoxTrainedModel.clear()  # Xóa danh sách cũ để tránh bị trùng lặp
+            self.comboBoxTrainedModel.addItems(models)  # Thêm danh sách mới vào combobox
 
