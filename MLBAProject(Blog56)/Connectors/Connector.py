@@ -3,13 +3,6 @@ import traceback
 import pandas as pd
 class Connector:
     def __init__(self,server=None, port=None, database=None, username=None, password=None):
-        if server==None:
-            self.server = "localhost"
-            self.port = 3306
-            self.database = "lecturer_retails"
-            self.username = "root"
-            self.password = "1234"
-        else:
             self.server=server
             self.port=port
             self.database=database
