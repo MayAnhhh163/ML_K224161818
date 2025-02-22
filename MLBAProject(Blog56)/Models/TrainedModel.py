@@ -1,3 +1,5 @@
+'''lưu trữ mô hình máy học được trained (model)
+các dữ liệu của biến độc lập và biến phụ thuộc, để lưu và nạp lại mô hình'''
 class TrainedModel:
     def __init__(self,model=None,X_train=None,X_test=None,y_train=None,y_test=None,columns_input=None,column_target=None):
         self.model=model

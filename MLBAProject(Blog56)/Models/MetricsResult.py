@@ -1,3 +1,4 @@
+'''lưu kết quả đánh giá mô hình'''
 class MetricsResult:
     def __init__(self,mae,mse,rmse,r2_score):
         self.MAE=mae
