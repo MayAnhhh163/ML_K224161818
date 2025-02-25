@@ -10,12 +10,12 @@ from matplotlib import pyplot as plt
 import seaborn as sns
 from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
 from matplotlib.backends.backend_qt5agg import NavigationToolbar2QT as NavigationToolbar
-from Blog56.Connectors.Connector import Connector
-from Blog56.Models.PurchaseLinearRegression import PurchaseLinearRegression
-from Blog56.Models.PurchaseStatistic import PurchaseStatistic
-from Blog56.UI.ChartHandle import ChartHandle
-from Blog56.UI.DatabaseConnectEx import DatabaseConnectEx
-from Blog56.UI.MainWindow import Ui_MainWindow
+from K224161818_ML.Blog56.Connectors.Connector import Connector
+from K224161818_ML.Blog56.Models.PurchaseLinearRegression import PurchaseLinearRegression
+from K224161818_ML.Blog56.Models.PurchaseStatistic import PurchaseStatistic
+from K224161818_ML.Blog56.UI.ChartHandle import ChartHandle
+from K224161818_ML.Blog56.UI.DatabaseConnectEx import DatabaseConnectEx
+from K224161818_ML.Blog56.UI.MainWindow import Ui_MainWindow
 import traceback
 import matplotlib
 from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg

@@ -9,10 +9,10 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_absolute_error, mean_squared_error,r2_score
 from sklearn.preprocessing import StandardScaler, LabelEncoder
-from Blog56.Models.MetricsResult import MetricsResult
-from Blog56.Models.PurchaseMLModel import PurchaseMLModel
-from Blog56.Models.TrainedModel import TrainedModel
-from Blog56.Utils.FileUtils import FileUtil
+from K224161818_ML.Blog56.Models.MetricsResult import MetricsResult
+from K224161818_ML.Blog56.Models.PurchaseMLModel import PurchaseMLModel
+from K224161818_ML.Blog56.Models.TrainedModel import TrainedModel
+from K224161818_ML.Blog56.Utils.FileUtils import FileUtil
 
 class PurchaseLinearRegression(PurchaseMLModel):
     def __init__(self,connector=None):
