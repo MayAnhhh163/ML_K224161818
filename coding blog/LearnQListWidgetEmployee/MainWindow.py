@@ -1,4 +1,4 @@
-# Form implementation generated from reading ui file 'D:\mhe\GitHub\ML_K224161818\coding blog\LearnQListWidgetEmployee\MainWindow.ui'
+# Form implementation generated from reading ui file 'D:\mhe\GitHub\K224161818_ML\coding blog\LearnQListWidgetEmployee\MainWindow.ui'
 #
 # Created by: PyQt6 UI code generator 6.8.0
 #

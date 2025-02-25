@@ -11,7 +11,7 @@ def main():
         min_value = float(request.form["min_value"])
         max_value = float(request.form["max_value"])
         sort_type = request.form.get("sort_type", "ascending") == "ascending"
-        df = pd.read_csv(r'D:\mhe\GitHub\ML_K224161818\dataset\SalesTransactions.csv')
+        df = pd.read_csv(r'/\dataset\SalesTransactions.csv')
         result = find_and_sort_orders(df, min_value, max_value, sort_type)
         return render_template("orders_sort.html",  tables=[result.to_html(classes='data')], titles=result.columns.values)
     else:

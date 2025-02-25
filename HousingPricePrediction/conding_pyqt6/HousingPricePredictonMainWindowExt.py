@@ -25,10 +25,10 @@ class HousingPricePredictionMainWindowExt(Ui_MainWindow):
 
         import pickle
         # chạy mô hình
-        modelname = "../trainedmodel/housingmodel.zip"
+        modelname = "../trainedModel/housingmodel.zip"
 
         if self.comboBoxTrainedModel.currentIndex()!=-1:
-            modelname=f"../trainedmodel/{self.comboBoxTrainedModel.currentText()}"
+            modelname=f"../trainedModel/{self.comboBoxTrainedModel.currentText()}"
 
         trainedmodel = pickle.load(open(modelname, 'rb'))
         prediction = trainedmodel.predict([[AreaIncome, AreaHouseAge, AreaNumberOfRooms, AreaNumberOfBedrooms, AreaPopulation]])

@@ -1,7 +1,7 @@
 import sqlite3
 import pandas as pd
 try:
-    sqliteConnection = sqlite3.connect(r'D:\mhe\GitHub\ML_K224161818\databases\Chinook_Sqlite.sqlite')
+    sqliteConnection = sqlite3.connect(r'/\databases\Chinook_Sqlite.sqlite')
     cursor = sqliteConnection.cursor()
     print('DB Init')
 

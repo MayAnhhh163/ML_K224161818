@@ -1,7 +1,6 @@
 import random
 from random import random
 import plotly.graph_objects as go
-
 from PyQt6 import QtGui, QtCore
 from PyQt6.QtCore import Qt, QSize
 from PyQt6.QtGui import QAction, QIcon, QPixmap
@@ -11,22 +10,16 @@ from matplotlib import pyplot as plt
 import seaborn as sns
 from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
 from matplotlib.backends.backend_qt5agg import NavigationToolbar2QT as NavigationToolbar
-
-from Connectors.Connector import Connector
-from Models.PurchaseLinearRegression import PurchaseLinearRegression
-from Models.PurchaseStatistic import PurchaseStatistic
-from UI.ChartHandle import ChartHandle
-from UI.DatabaseConnectEx import DatabaseConnectEx
-from UI.MainWindow import Ui_MainWindow
+from Blog56.Connectors.Connector import Connector
+from Blog56.Models.PurchaseLinearRegression import PurchaseLinearRegression
+from Blog56.Models.PurchaseStatistic import PurchaseStatistic
+from Blog56.UI.ChartHandle import ChartHandle
+from Blog56.UI.DatabaseConnectEx import DatabaseConnectEx
+from Blog56.UI.MainWindow import Ui_MainWindow
 import traceback
-
-
 import matplotlib
-
 from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg
 from matplotlib.figure import Figure
-
-
 from matplotlib.backends.backend_qt5agg import NavigationToolbar2QT as NavigationToolbar
 import random
 
@@ -42,9 +35,7 @@ class MainWindowEx(Ui_MainWindow):
         self.MainWindow=MainWindow
         self.verticalLayoutFunctions.setAlignment(Qt.AlignmentFlag.AlignTop)
         self.setupPlot()
-
         self.actionConnection.triggered.connect(self.openDatabaseConnectUI)
-
         self.pushButtonPurchaseRatesByGender.clicked.connect(self.showPurchaseRatesByGender)
         self.pushButtonSalesFlucuationsByYearAndMonth.clicked.connect(self.showSalesFlucuationsByYearAndMonth)
         self.pushButtonPurchaseCountingByCategory.clicked.connect(self.showPurchaseCountingByCategory)
@@ -58,15 +49,16 @@ class MainWindowEx(Ui_MainWindow):
         self.pushButtonPurchaseFrequenceByAge.clicked.connect(self.showShowPurchaseFrequenceByAge)
         self.pushButtonSalesFluctuationsByMonth.clicked.connect(self.showpushButtonSalesFluctuationsByMonth)
         self.checkEnableWidget(False)
-
         self.pushButtonTrainModel.clicked.connect(self.processTrainModel)
         self.pushButtonEvaluate.clicked.connect(self.processEvaluateTrainedModel)
         self.pushButtonSavePath.clicked.connect(self.processPickSavePath)
         self.pushButtonSaveModel.clicked.connect(self.processSaveTrainedModel)
         self.pushButtonLoadModel.clicked.connect(self.processLoadTrainedModel)
         self.pushButtonPredict.clicked.connect(self.processPrediction)
+
     def show(self):
         self.MainWindow.show()
+
     def checkEnableWidget(self,flag=True):
         self.pushButtonPurchaseRatesByGender.setEnabled(flag)
         self.pushButtonPurchaseRatesByAgeGroup.setEnabled(flag)
@@ -75,7 +67,6 @@ class MainWindowEx(Ui_MainWindow):
         self.pushButtonPurchaseByCategoryAndGender.setEnabled(flag)
         self.pushButtonPaymentMethod.setEnabled(flag)
         self.pushButtonPurchaseRatesByShoppingMall.setEnabled(flag)
-
         self.pushButtonProductSpendingByGender.setEnabled(flag)
         self.pushButtonPurchaseFrequenceByAge.setEnabled(flag)
         self.pushButtonSalesFluctuationsByMonth.setEnabled(flag)
@@ -346,7 +337,7 @@ class MainWindowEx(Ui_MainWindow):
         gender = self.lineEditGender.text()
         age = int(self.lineEditAge.text())
         payment = self.lineEditPaymentMethod.text()
-        if len(self.purchaseLinearRegression.trainedmodel.columns_input)==3:
+        if len(self.purchaseLinearRegression.trainedModel.columns_input)==3:
             predicted_price = self.purchaseLinearRegression.predictPriceFromGenderAndAgeAndPayment(gender, age, payment)
         else:
             predicted_price = self.purchaseLinearRegression.predictPriceFromGenderAndAge(gender, age)

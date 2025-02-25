@@ -1,4 +1,4 @@
-# Form implementation generated from reading ui file 'D:\mhe\GitHub\ML_K224161818\coding blog\LearnQTableWidgetPart2\MainWindow.ui'
+# Form implementation generated from reading ui file 'D:\mhe\GitHub\K224161818_ML\coding blog\LearnQTableWidgetPart2\MainWindow.ui'
 #
 # Created by: PyQt6 UI code generator 6.8.0
 #
@@ -14,7 +14,7 @@ class Ui_MainWindow(object):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(456, 485)
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("D:\\mhe\\GitHub\\ML_K224161818\\coding blog\\LearnQTableWidgetPart2\\images/ic_logo.jpg"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon.addPixmap(QtGui.QPixmap("/\\coding blog\\LearnQTableWidgetPart2\\images/ic_logo.jpg"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         MainWindow.setWindowIcon(icon)
         self.centralwidget = QtWidgets.QWidget(parent=MainWindow)
         self.centralwidget.setObjectName("centralwidget")
@@ -35,7 +35,7 @@ class Ui_MainWindow(object):
         self.pushButtonRemove.setGeometry(QtCore.QRect(290, 20, 91, 28))
         self.pushButtonRemove.setStyleSheet("background-color: rgb(255, 170, 255);")
         icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap("D:\\mhe\\GitHub\\ML_K224161818\\coding blog\\LearnQTableWidgetPart2\\images/ic_delete.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon1.addPixmap(QtGui.QPixmap("/\\coding blog\\LearnQTableWidgetPart2\\images/ic_delete.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         self.pushButtonRemove.setIcon(icon1)
         self.pushButtonRemove.setIconSize(QtCore.QSize(24, 24))
         self.pushButtonRemove.setObjectName("pushButtonRemove")
@@ -43,7 +43,7 @@ class Ui_MainWindow(object):
         self.pushButtonSave.setGeometry(QtCore.QRect(160, 20, 81, 28))
         self.pushButtonSave.setStyleSheet("background-color: rgb(255, 170, 255);")
         icon2 = QtGui.QIcon()
-        icon2.addPixmap(QtGui.QPixmap("D:\\mhe\\GitHub\\ML_K224161818\\coding blog\\LearnQTableWidgetPart2\\images/ic_save.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon2.addPixmap(QtGui.QPixmap("/\\coding blog\\LearnQTableWidgetPart2\\images/ic_save.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         self.pushButtonSave.setIcon(icon2)
         self.pushButtonSave.setIconSize(QtCore.QSize(24, 24))
         self.pushButtonSave.setObjectName("pushButtonSave")
@@ -51,7 +51,7 @@ class Ui_MainWindow(object):
         self.pushButtonNew.setGeometry(QtCore.QRect(40, 20, 71, 28))
         self.pushButtonNew.setStyleSheet("background-color: rgb(255, 170, 255);")
         icon3 = QtGui.QIcon()
-        icon3.addPixmap(QtGui.QPixmap("D:\\mhe\\GitHub\\ML_K224161818\\coding blog\\LearnQTableWidgetPart2\\images/ic_new.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon3.addPixmap(QtGui.QPixmap("/\\coding blog\\LearnQTableWidgetPart2\\images/ic_new.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         self.pushButtonNew.setIcon(icon3)
         self.pushButtonNew.setIconSize(QtCore.QSize(24, 24))
         self.pushButtonNew.setObjectName("pushButtonNew")

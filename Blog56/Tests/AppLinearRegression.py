@@ -6,7 +6,6 @@ from Blog56.Models.PurchaseLinearRegression import PurchaseLinearRegression
 connector=Connector(server="localhost",port=3306,database="lecturer_retails",username="root",password="1234")
 connector.connect()
 
-pm=PurchaseLinearRegression
 pm=PurchaseLinearRegression(connector=connector)
 pm.processTrain(["gender","age"],"price",0.2,0)
 #pm.processTrain(["gender","age","payment_method"],"price")

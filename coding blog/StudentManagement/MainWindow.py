@@ -1,4 +1,4 @@
-# Form implementation generated from reading ui file 'D:\mhe\GitHub\ML_K224161818\coding blog\StudentManagement\MainWindow.ui'
+# Form implementation generated from reading ui file 'D:\mhe\GitHub\K224161818_ML\coding blog\StudentManagement\MainWindow.ui'
 #
 # Created by: PyQt6 UI code generator 6.8.0
 #
@@ -14,7 +14,7 @@ class Ui_MainWindow(object):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(456, 552)
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("D:\\mhe\\GitHub\\ML_K224161818\\coding blog\\StudentManagement\\images/ic_logo.jpg"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon.addPixmap(QtGui.QPixmap("/\\coding blog\\StudentManagement\\images/ic_logo.jpg"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         MainWindow.setWindowIcon(icon)
         self.centralwidget = QtWidgets.QWidget(parent=MainWindow)
         self.centralwidget.setObjectName("centralwidget")
@@ -35,7 +35,7 @@ class Ui_MainWindow(object):
         self.pushButtonRemove.setGeometry(QtCore.QRect(300, 20, 91, 28))
         self.pushButtonRemove.setStyleSheet("background-color: rgb(255, 170, 255);")
         icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap("D:\\mhe\\GitHub\\ML_K224161818\\coding blog\\StudentManagement\\images/ic_delete.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon1.addPixmap(QtGui.QPixmap("/\\coding blog\\StudentManagement\\images/ic_delete.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         self.pushButtonRemove.setIcon(icon1)
         self.pushButtonRemove.setIconSize(QtCore.QSize(24, 24))
         self.pushButtonRemove.setObjectName("pushButtonRemove")
@@ -43,7 +43,7 @@ class Ui_MainWindow(object):
         self.pushButtonInsert.setGeometry(QtCore.QRect(100, 20, 81, 28))
         self.pushButtonInsert.setStyleSheet("background-color: rgb(255, 170, 255);")
         icon2 = QtGui.QIcon()
-        icon2.addPixmap(QtGui.QPixmap("D:\\mhe\\GitHub\\ML_K224161818\\coding blog\\StudentManagement\\images/ic_save.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon2.addPixmap(QtGui.QPixmap("/\\coding blog\\StudentManagement\\images/ic_save.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         self.pushButtonInsert.setIcon(icon2)
         self.pushButtonInsert.setIconSize(QtCore.QSize(24, 24))
         self.pushButtonInsert.setObjectName("pushButtonInsert")
@@ -51,7 +51,7 @@ class Ui_MainWindow(object):
         self.pushButtonNew.setGeometry(QtCore.QRect(10, 20, 71, 28))
         self.pushButtonNew.setStyleSheet("background-color: rgb(255, 170, 255);")
         icon3 = QtGui.QIcon()
-        icon3.addPixmap(QtGui.QPixmap("D:\\mhe\\GitHub\\ML_K224161818\\coding blog\\StudentManagement\\images/ic_new.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon3.addPixmap(QtGui.QPixmap("/\\coding blog\\StudentManagement\\images/ic_new.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         self.pushButtonNew.setIcon(icon3)
         self.pushButtonNew.setIconSize(QtCore.QSize(24, 24))
         self.pushButtonNew.setObjectName("pushButtonNew")
@@ -59,7 +59,7 @@ class Ui_MainWindow(object):
         self.pushButtonUpdate.setGeometry(QtCore.QRect(200, 20, 81, 28))
         self.pushButtonUpdate.setStyleSheet("background-color: rgb(255, 170, 255);")
         icon4 = QtGui.QIcon()
-        icon4.addPixmap(QtGui.QPixmap("D:\\mhe\\GitHub\\ML_K224161818\\coding blog\\StudentManagement\\images/ic_update.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon4.addPixmap(QtGui.QPixmap("/\\coding blog\\StudentManagement\\images/ic_update.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         self.pushButtonUpdate.setIcon(icon4)
         self.pushButtonUpdate.setIconSize(QtCore.QSize(24, 24))
         self.pushButtonUpdate.setObjectName("pushButtonUpdate")
@@ -100,7 +100,7 @@ class Ui_MainWindow(object):
         self.labelAvatar.setStyleSheet("background-color: rgb(170, 255, 255);\n"
 "border-color: rgb(85, 85, 0);")
         self.labelAvatar.setText("")
-        self.labelAvatar.setPixmap(QtGui.QPixmap("D:\\mhe\\GitHub\\ML_K224161818\\coding blog\\StudentManagement\\images/ic_no_avatar.png"))
+        self.labelAvatar.setPixmap(QtGui.QPixmap("/\\coding blog\\StudentManagement\\images/ic_no_avatar.png"))
         self.labelAvatar.setScaledContents(True)
         self.labelAvatar.setObjectName("labelAvatar")
         self.pushButtonAvatar = QtWidgets.QPushButton(parent=self.groupBox_2)

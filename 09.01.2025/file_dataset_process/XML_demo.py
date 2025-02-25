@@ -1,5 +1,5 @@
 from bs4 import BeautifulSoup
-with open(r'D:\mhe\GitHub\ML_K224161818\dataset\SalesTransactions.xml','r') as f:
+with open(r'/\dataset\SalesTransactions.xml', 'r') as f:
     data = f.read()
 bs_data = BeautifulSoup(data,'xml')
 

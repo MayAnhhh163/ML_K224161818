@@ -1,4 +1,4 @@
-# Form implementation generated from reading ui file 'D:\mhe\GitHub\ML_K224161818\Blog56\UI\DatabaseConnect.ui'
+# Form implementation generated from reading ui file 'D:\mhe\GitHub\K224161818_ML\Blog56\UI\DatabaseConnect.ui'
 #
 # Created by: PyQt6 UI code generator 6.8.0
 #

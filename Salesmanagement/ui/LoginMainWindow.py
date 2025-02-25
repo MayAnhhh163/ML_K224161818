@@ -1,4 +1,4 @@
-# Form implementation generated from reading ui file 'D:\mhe\GitHub\ML_K224161818\Salesmanagement\ui\LoginMainWindow.ui'
+# Form implementation generated from reading ui file 'D:\mhe\GitHub\K224161818_ML\Salesmanagement\ui\LoginMainWindow.ui'
 #
 # Created by: PyQt6 UI code generator 6.8.0
 #
@@ -14,7 +14,7 @@ class Ui_MainWindow(object):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(966, 600)
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("D:\\mhe\\GitHub\\ML_K224161818\\Salesmanagement\\ui\\../images/window icon.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon.addPixmap(QtGui.QPixmap("/\\Salesmanagement\\ui\\../images/window icon.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         MainWindow.setWindowIcon(icon)
         self.centralwidget = QtWidgets.QWidget(parent=MainWindow)
         self.centralwidget.setObjectName("centralwidget")
@@ -58,7 +58,7 @@ class Ui_MainWindow(object):
         font.setPointSize(15)
         self.pushButton_dangnhap.setFont(font)
         icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap("D:\\mhe\\GitHub\\ML_K224161818\\Salesmanagement\\ui\\../images/login.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon1.addPixmap(QtGui.QPixmap("/\\Salesmanagement\\ui\\../images/login.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         self.pushButton_dangnhap.setIcon(icon1)
         self.pushButton_dangnhap.setIconSize(QtCore.QSize(32, 32))
         self.pushButton_dangnhap.setObjectName("pushButton_dangnhap")
@@ -68,14 +68,14 @@ class Ui_MainWindow(object):
         font.setPointSize(15)
         self.pushButton_thoat.setFont(font)
         icon2 = QtGui.QIcon()
-        icon2.addPixmap(QtGui.QPixmap("D:\\mhe\\GitHub\\ML_K224161818\\Salesmanagement\\ui\\../images/logout.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon2.addPixmap(QtGui.QPixmap("/\\Salesmanagement\\ui\\../images/logout.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         self.pushButton_thoat.setIcon(icon2)
         self.pushButton_thoat.setIconSize(QtCore.QSize(32, 32))
         self.pushButton_thoat.setObjectName("pushButton_thoat")
         self.label_4 = QtWidgets.QLabel(parent=self.centralwidget)
         self.label_4.setGeometry(QtCore.QRect(20, 140, 251, 261))
         self.label_4.setText("")
-        self.label_4.setPixmap(QtGui.QPixmap("D:\\mhe\\GitHub\\ML_K224161818\\Salesmanagement\\ui\\../images/admin.png"))
+        self.label_4.setPixmap(QtGui.QPixmap("/\\Salesmanagement\\ui\\../images/admin.png"))
         self.label_4.setScaledContents(True)
         self.label_4.setObjectName("label_4")
         MainWindow.setCentralWidget(self.centralwidget)

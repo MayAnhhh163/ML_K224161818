@@ -5,9 +5,7 @@
 from sklearn.preprocessing import LabelEncoder
 import seaborn as sns
 from matplotlib import pyplot as plt
-
-from Models.PurchaseStatistic import PurchaseStatistic
-
+from Blog56.Models.PurchaseStatistic import PurchaseStatistic
 
 class PurchaseMLModel(PurchaseStatistic):
     def __init__(self, connector=None):

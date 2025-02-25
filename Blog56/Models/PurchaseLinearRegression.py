@@ -2,13 +2,13 @@
 
 import pandas as pd
 from matplotlib import pyplot as plt
+import numpy as np
 
 from sklearn.model_selection import train_test_split
 #data modelling
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_absolute_error, mean_squared_error,r2_score
 from sklearn.preprocessing import StandardScaler, LabelEncoder
-
 from Blog56.Models.MetricsResult import MetricsResult
 from Blog56.Models.PurchaseMLModel import PurchaseMLModel
 from Blog56.Models.TrainedModel import TrainedModel
@@ -19,6 +19,8 @@ class PurchaseLinearRegression(PurchaseMLModel):
         super().__init__(connector)
         self.le = LabelEncoder()
         self.sc_std = StandardScaler()
+        self.trainedModel = TrainedModel()
+
     def processTrain(self,columns_input,column_target,test_size,random_state):
         self.execPurchaseHistory()
         self.processTransform()
@@ -29,32 +31,35 @@ class PurchaseLinearRegression(PurchaseMLModel):
         print("X=",X)
         print("y=", y)
         self.X_train, self.X_test, self.y_train, self.y_test = train_test_split(X, y, test_size=test_size, random_state=random_state)
-        self.trainedmodel=TrainedModel()
-        self.trainedmodel.X_train=self.X_train
-        self.trainedmodel.X_test=self.X_test
-        self.trainedmodel.y_train=self.y_train
-        self.trainedmodel.y_test=self.y_test
-        self.trainedmodel.columns_input=columns_input
-        self.trainedmodel.column_target=column_target
+        self.trainedModel = TrainedModel()
+        self.trainedModel.X_train=self.X_train
+        self.trainedModel.X_test=self.X_test
+        self.trainedModel.y_train=self.y_train
+        self.trainedModel.y_test=self.y_test
+        self.trainedModel.columns_input=columns_input
+        self.trainedModel.column_target=column_target
         #self.sc_std = StandardScaler()
         self.X_train = self.sc_std.fit_transform(self.X_train)
         self.X_test = self.sc_std.transform(self.X_test)
         self.lr = LinearRegression()
         self.model = self.lr.fit(self.X_train, self.y_train)
-        self.trainedmodel.model=self.model
+        self.trainedModel.model=self.model
+
     def visualizeActualAndPredictResult(self):
         plt.figure(figsize=(8, 6))
         plt.scatter(self.lr.predict(self.X_train), self.y_train)
         plt.xlabel('Predicted value of Y')
         plt.ylabel('Real value of Y')
         plt.show()
+
     def evaluate(self):
         pred = self.model.predict(self.X_test)
         mae=mean_absolute_error(self.y_test, pred)
-        mse = mean_squared_error(self.y_test, pred, squared=True)
-        rmse = mean_squared_error(self.y_test, pred, squared=False)
+        mse = mean_squared_error(self.y_test,pred)
+        rmse = np.sqrt(mse)
         r2score=r2_score(self.y_test, pred)
         return MetricsResult(mae,mse,rmse,r2score)
+
     def predictPriceFromGenderAndAge(self,gender,age):
         data_gender = {'gender': ["Male", "Female"]}
         df_gender = pd.DataFrame(data=data_gender)
@@ -68,6 +73,7 @@ class PurchaseLinearRegression(PurchaseMLModel):
         input_transform = self.sc_std.transform(data)
         pred = self.predict(input_transform)
         return pred
+
     def predictPriceFromGenderAndAgeAndPayment(self,gender,age,payment_method):
         data_gender= {'gender': ["Male", "Female"]}
         df_gender=pd.DataFrame(data=data_gender)
@@ -95,11 +101,13 @@ class PurchaseLinearRegression(PurchaseMLModel):
     def predict(self,columns_input):
         pred = self.model.predict(columns_input)
         return pred
+
     def saveModel(self,fileName):
-        ret=FileUtil.saveModel(self.trainedmodel,fileName)
+        ret=FileUtil.saveModel(self.trainedModel, fileName)
         return ret
+
     def loadModel(self,fileName):
-        self.trainedmodel=FileUtil.loadModel(fileName)
-        self.sc_std.fit_transform(self.trainedmodel.X_train)
-        self.model=self.trainedmodel.model
+        self.trainedModel=FileUtil.loadModel(fileName)
+        self.sc_std.fit_transform(self.trainedModel.X_train)
+        self.model=self.trainedModel.model
         return self.model

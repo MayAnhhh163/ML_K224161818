@@ -13,7 +13,7 @@ def find_orders_within_range(df, minValue, maxValue, sortType):
     return result
 
 # Đọc dữ liệu
-df = pd.read_csv(r'D:\mhe\GitHub\ML_K224161818\dataset\SalesTransactions.csv')
+df = pd.read_csv(r'/\dataset\SalesTransactions.csv')
 
 # Nhập giá trị min, max và kiểu sắp xếp
 minValue = float(input("Nhập giá trị min: "))

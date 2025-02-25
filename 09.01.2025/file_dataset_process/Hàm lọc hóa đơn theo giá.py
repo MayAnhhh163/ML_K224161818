@@ -10,7 +10,7 @@ def find_orders_within_range(df, minValue, maxValue):
 
     return unique_orders
 
-df = pd.read_csv(r'D:\mhe\GitHub\ML_K224161818\dataset\SalesTransactions.csv')
+df = pd.read_csv(r'/\dataset\SalesTransactions.csv')
 minValue = float(input("Nhập giá trị min: "))
 maxValue = float(input("Nhập giá trị max: "))
 result = find_orders_within_range(df, minValue, maxValue)

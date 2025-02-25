@@ -44,5 +44,5 @@ def get_customers_with_invoices(database_path, min_invoices):
             print('Đã đóng kết nối CSDL.')
 
 
-result = get_customers_with_invoices(r'D:\mhe\GitHub\ML_K224161818\databases\Chinook_Sqlite.sqlite',5)
+result = get_customers_with_invoices(r'/\databases\Chinook_Sqlite.sqlite', 5)
 print(result)
