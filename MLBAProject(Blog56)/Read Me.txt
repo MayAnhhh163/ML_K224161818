@@ -1,8 +1,0 @@
-(1) Thư mục “Assets” là thư mục tạo ra để lưu trữ các mô hình máy học được train thành công, dĩ nhiên người sử dụng có thể lưu ở bất cứ nơi nào, nhưng đề xuất lưu vào đây để dễ quản lý
-(2) Thư mục “Connectors” là thư mục lưu thư viện kết nối và tương tác cơ sở dữ liệu MySQL Server
-(3) Thư mục “Images” là thư mục lưu trữ các hình ảnh để sử dụng cho phần mềm
-(4) Thư mục “Models” là thư mục chưa các lớp thư viện liên quan tới thống kê và máy học
-(5) Thư mục “Tests” Là thư mục chứa các tập tin mã lệnh để thử nghiệm các hàm thống kê và máy học trước khi sử dụng thực tế. Thư mục này bạn có thể bỏ qua
-(6) Thư mục “UI” là thư mục chứa các file thiết kế giao diện và generate python code cho giao diện, cũng như đồ thị
-(7) Thư mục “Utils” là thư mục chưa thư viện xử lý tập tin, dùng để lưu mô hình máy học và tải mô hình máy học
-(8) Cuối cùng là tập tin “App.py” để thực thi chương trình.
