@@ -98,6 +98,7 @@ class PurchaseLinearRegression(PurchaseMLModel):
         input_transform = self.sc_std.transform(data)
         pred = self.predict(input_transform)
         return pred
+
     def predict(self,columns_input):
         pred = self.model.predict(columns_input)
         return pred
