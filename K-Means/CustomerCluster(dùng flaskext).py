@@ -133,3 +133,80 @@ visualizeKMeans(X,
                 "Age",
                 "Spending Score",
                 colors)
+
+
+###Thực nghiệm gom cụm theo 2 cột khác: Cột Annual Income và Spending Score
+columns = ['Annual Income', 'Spending Score']
+elbowMethod(df2,columns)
+
+X = df2.loc[:, columns].values
+cluster=5
+
+y_kmeans,centroids,labels=runKMeans(X,cluster)
+
+print(y_kmeans)
+print(centroids)
+print(labels)
+
+df2["cluster"]=labels
+visualizeKMeans(X,
+                y_kmeans,
+                cluster,
+                "Clusters of Customers - Annual Income X Spending Score",
+                "Annual Income",
+                "Spending Score",
+                colors)
+
+
+# Lấy danh sách khách hàng trong từng cụm
+def getCustomersByCluster(conn, df, cluster_number):
+    customer_ids = df[df["cluster"] == cluster_number]["CustomerId"].tolist()
+    if not customer_ids:
+        print(f"Không có khách hàng nào trong cụm {cluster_number}")
+        return None
+
+    customer_ids_str = ",".join(map(str, customer_ids))
+    sql = f"SELECT * FROM customer WHERE CustomerId IN ({customer_ids_str})"
+
+    df_cluster = queryDataset(conn, sql)
+
+    print(f"\n--- Danh sách khách hàng trong cụm {cluster_number} ---")
+    print(df_cluster)
+    return df_cluster
+
+getCustomersByCluster(conn, df2, 3)
+
+###Thực nghiệm gom cụm theo 3 cột khác: Cột Age, Annual Income và Spending Score
+columns = ['Age','Annual Income', 'Spending Score']
+elbowMethod(df2,columns)
+
+X = df2.loc[:, columns].values
+cluster=6
+
+
+y_kmeans,centroids,labels=runKMeans(X,cluster)
+
+print(y_kmeans)
+print(centroids)
+print(labels)
+df2["cluster"]=labels
+print(df2)
+
+
+def visualize3DKmeans(df, columns, hover_data, cluster):
+    fig = px.scatter_3d(
+        df,
+        x=columns[0],
+        y=columns[1],
+        z=columns[2],
+        color='cluster',
+        hover_data=hover_data,
+        category_orders={"cluster": range(0, cluster)},
+    )
+
+    fig.update_layout(margin=dict(l=0, r=0, b=0, t=0))
+    fig.show()
+
+
+hover_data=df2.columns
+visualize3DKmeans(df2,columns,hover_data,cluster)
