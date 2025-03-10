@@ -3,13 +3,13 @@
  <class>MainWindow</class>
  <widget class="QMainWindow" name="MainWindow">
   <property name="windowModality">
-   <enum>Qt::ApplicationModal</enum>
+   <enum>Qt::WindowModality::ApplicationModal</enum>
   </property>
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1440</width>
+    <width>1446</width>
     <height>1024</height>
    </rect>
   </property>
@@ -180,8 +180,8 @@
    <widget class="QLabel" name="frame_connection">
     <property name="geometry">
      <rect>
-      <x>225</x>
-      <y>212</y>
+      <x>273</x>
+      <y>136</y>
       <width>989</width>
       <height>600</height>
      </rect>
@@ -199,9 +199,9 @@
    <widget class="QLabel" name="label_connection">
     <property name="geometry">
      <rect>
-      <x>278</x>
-      <y>185</y>
-      <width>651</width>
+      <x>326</x>
+      <y>109</y>
+      <width>531</width>
       <height>51</height>
      </rect>
     </property>
@@ -244,8 +244,8 @@
     </property>
     <property name="font">
      <font>
+      <family>Segoe UI</family>
       <pointsize>36</pointsize>
-      <weight>75</weight>
       <bold>true</bold>
      </font>
     </property>
@@ -253,13 +253,13 @@
      <bool>true</bool>
     </property>
     <property name="frameShape">
-     <enum>QFrame::NoFrame</enum>
+     <enum>QFrame::Shape::NoFrame</enum>
     </property>
     <property name="text">
      <string>CONNECTION SETTING</string>
     </property>
     <property name="textFormat">
-     <enum>Qt::AutoText</enum>
+     <enum>Qt::TextFormat::AutoText</enum>
     </property>
     <property name="wordWrap">
      <bool>false</bool>
@@ -268,8 +268,8 @@
    <widget class="QLabel" name="label_server">
     <property name="geometry">
      <rect>
-      <x>305</x>
-      <y>270</y>
+      <x>353</x>
+      <y>194</y>
       <width>203</width>
       <height>46</height>
      </rect>
@@ -278,7 +278,6 @@
      <font>
       <family>Segoe UI</family>
       <pointsize>29</pointsize>
-      <weight>75</weight>
       <bold>true</bold>
      </font>
     </property>
@@ -289,16 +288,16 @@
    <widget class="QLabel" name="label_port">
     <property name="geometry">
      <rect>
-      <x>305</x>
-      <y>362</y>
+      <x>353</x>
+      <y>286</y>
       <width>203</width>
       <height>46</height>
      </rect>
     </property>
     <property name="font">
      <font>
+      <family>Segoe UI</family>
       <pointsize>29</pointsize>
-      <weight>75</weight>
       <bold>true</bold>
      </font>
     </property>
@@ -309,16 +308,16 @@
    <widget class="QLabel" name="label_database">
     <property name="geometry">
      <rect>
-      <x>305</x>
-      <y>454</y>
+      <x>353</x>
+      <y>378</y>
       <width>261</width>
       <height>46</height>
      </rect>
     </property>
     <property name="font">
      <font>
+      <family>Segoe UI</family>
       <pointsize>29</pointsize>
-      <weight>75</weight>
       <bold>true</bold>
      </font>
     </property>
@@ -329,16 +328,16 @@
    <widget class="QLabel" name="label_user">
     <property name="geometry">
      <rect>
-      <x>305</x>
-      <y>546</y>
+      <x>353</x>
+      <y>470</y>
       <width>261</width>
       <height>46</height>
      </rect>
     </property>
     <property name="font">
      <font>
+      <family>Segoe UI</family>
       <pointsize>29</pointsize>
-      <weight>75</weight>
       <bold>true</bold>
      </font>
     </property>
@@ -349,16 +348,16 @@
    <widget class="QLabel" name="label_password">
     <property name="geometry">
      <rect>
-      <x>305</x>
-      <y>638</y>
+      <x>353</x>
+      <y>562</y>
       <width>261</width>
       <height>46</height>
      </rect>
     </property>
     <property name="font">
      <font>
+      <family>Segoe UI</family>
       <pointsize>29</pointsize>
-      <weight>75</weight>
       <bold>true</bold>
      </font>
     </property>
@@ -369,8 +368,8 @@
    <widget class="QLabel" name="label_2cham">
     <property name="geometry">
      <rect>
-      <x>540</x>
-      <y>270</y>
+      <x>588</x>
+      <y>194</y>
       <width>21</width>
       <height>46</height>
      </rect>
@@ -379,7 +378,6 @@
      <font>
       <family>Segoe UI</family>
       <pointsize>29</pointsize>
-      <weight>75</weight>
       <bold>true</bold>
      </font>
     </property>
@@ -390,8 +388,8 @@
    <widget class="QLabel" name="label_2cham_2">
     <property name="geometry">
      <rect>
-      <x>540</x>
-      <y>362</y>
+      <x>588</x>
+      <y>286</y>
       <width>21</width>
       <height>46</height>
      </rect>
@@ -400,7 +398,6 @@
      <font>
       <family>Segoe UI</family>
       <pointsize>29</pointsize>
-      <weight>75</weight>
       <bold>true</bold>
      </font>
     </property>
@@ -411,8 +408,8 @@
    <widget class="QLabel" name="label_2cham_3">
     <property name="geometry">
      <rect>
-      <x>540</x>
-      <y>454</y>
+      <x>588</x>
+      <y>378</y>
       <width>21</width>
       <height>46</height>
      </rect>
@@ -421,7 +418,6 @@
      <font>
       <family>Segoe UI</family>
       <pointsize>29</pointsize>
-      <weight>75</weight>
       <bold>true</bold>
      </font>
     </property>
@@ -432,8 +428,8 @@
    <widget class="QLabel" name="label_2cham_4">
     <property name="geometry">
      <rect>
-      <x>540</x>
-      <y>546</y>
+      <x>588</x>
+      <y>470</y>
       <width>21</width>
       <height>46</height>
      </rect>
@@ -442,7 +438,6 @@
      <font>
       <family>Segoe UI</family>
       <pointsize>29</pointsize>
-      <weight>75</weight>
       <bold>true</bold>
      </font>
     </property>
@@ -453,8 +448,8 @@
    <widget class="QLabel" name="label_2cham_5">
     <property name="geometry">
      <rect>
-      <x>540</x>
-      <y>638</y>
+      <x>588</x>
+      <y>562</y>
       <width>21</width>
       <height>46</height>
      </rect>
@@ -463,7 +458,6 @@
      <font>
       <family>Segoe UI</family>
       <pointsize>29</pointsize>
-      <weight>75</weight>
       <bold>true</bold>
      </font>
     </property>
@@ -474,8 +468,8 @@
    <widget class="QLabel" name="frame_portinput">
     <property name="geometry">
      <rect>
-      <x>600</x>
-      <y>362</y>
+      <x>648</x>
+      <y>286</y>
       <width>516</width>
       <height>56</height>
      </rect>
@@ -493,8 +487,8 @@
    <widget class="QLabel" name="frame_databaseinput">
     <property name="geometry">
      <rect>
-      <x>600</x>
-      <y>454</y>
+      <x>648</x>
+      <y>378</y>
       <width>516</width>
       <height>56</height>
      </rect>
@@ -512,8 +506,8 @@
    <widget class="QLabel" name="frame_userinput">
     <property name="geometry">
      <rect>
-      <x>600</x>
-      <y>546</y>
+      <x>648</x>
+      <y>470</y>
       <width>516</width>
       <height>56</height>
      </rect>
@@ -531,8 +525,8 @@
    <widget class="QLabel" name="frame_passwordinput">
     <property name="geometry">
      <rect>
-      <x>600</x>
-      <y>638</y>
+      <x>648</x>
+      <y>562</y>
       <width>516</width>
       <height>56</height>
      </rect>
@@ -553,10 +547,10 @@
     </property>
     <property name="geometry">
      <rect>
-      <x>610</x>
-      <y>710</y>
+      <x>658</x>
+      <y>644</y>
       <width>200</width>
-      <height>61</height>
+      <height>51</height>
      </rect>
     </property>
     <property name="sizePolicy">
@@ -658,8 +652,8 @@
     </property>
     <property name="font">
      <font>
+      <family>Segoe UI</family>
       <pointsize>23</pointsize>
-      <weight>75</weight>
       <bold>true</bold>
      </font>
     </property>
@@ -679,8 +673,8 @@
    <widget class="QLabel" name="frame_connectbutton">
     <property name="geometry">
      <rect>
-      <x>600</x>
-      <y>720</y>
+      <x>648</x>
+      <y>644</y>
       <width>221</width>
       <height>51</height>
      </rect>
@@ -698,8 +692,8 @@
    <widget class="QLabel" name="frame_connectbutton_2">
     <property name="geometry">
      <rect>
-      <x>890</x>
-      <y>720</y>
+      <x>938</x>
+      <y>644</y>
       <width>221</width>
       <height>51</height>
      </rect>
@@ -720,10 +714,10 @@
     </property>
     <property name="geometry">
      <rect>
-      <x>900</x>
-      <y>710</y>
+      <x>948</x>
+      <y>644</y>
       <width>200</width>
-      <height>61</height>
+      <height>51</height>
      </rect>
     </property>
     <property name="sizePolicy">
@@ -825,8 +819,8 @@
     </property>
     <property name="font">
      <font>
+      <family>Segoe UI</family>
       <pointsize>23</pointsize>
-      <weight>75</weight>
       <bold>true</bold>
      </font>
     </property>
@@ -846,8 +840,8 @@
    <widget class="QLabel" name="frame_serverinput">
     <property name="geometry">
      <rect>
-      <x>600</x>
-      <y>270</y>
+      <x>648</x>
+      <y>194</y>
       <width>516</width>
       <height>56</height>
      </rect>
@@ -860,6 +854,176 @@
     </property>
     <property name="scaledContents">
      <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditServer">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>202</y>
+      <width>471</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>23</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>localhost</string>
+    </property>
+    <property name="frame">
+     <bool>false</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+    </property>
+    <property name="clearButtonEnabled">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditPort">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>294</y>
+      <width>471</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>23</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>3306</string>
+    </property>
+    <property name="frame">
+     <bool>false</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+    </property>
+    <property name="clearButtonEnabled">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditDatabase">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>387</y>
+      <width>471</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>23</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="frame">
+     <bool>false</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+    </property>
+    <property name="clearButtonEnabled">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditUser">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>478</y>
+      <width>471</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>23</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>mhe</string>
+    </property>
+    <property name="frame">
+     <bool>false</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+    </property>
+    <property name="clearButtonEnabled">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditPassword">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>570</y>
+      <width>471</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>23</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>1234</string>
+    </property>
+    <property name="frame">
+     <bool>false</bool>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::EchoMode::PasswordEchoOnEdit</enum>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+    </property>
+    <property name="readOnly">
+     <bool>false</bool>
+    </property>
+    <property name="clearButtonEnabled">
+     <bool>false</bool>
     </property>
    </widget>
    <zorder>frame_connection</zorder>
@@ -882,19 +1046,31 @@
    <zorder>pushButton_connect</zorder>
    <zorder>frame_connectbutton_2</zorder>
    <zorder>pushButton_exit</zorder>
+   <zorder>frame_serverinput</zorder>
+   <zorder>lineEditServer</zorder>
+   <zorder>lineEditPort</zorder>
+   <zorder>lineEditDatabase</zorder>
+   <zorder>lineEditUser</zorder>
+   <zorder>lineEditPassword</zorder>
   </widget>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>1440</width>
-     <height>26</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>pushButton_exit</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1047</x>
+     <y>669</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>722</x>
+     <y>511</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>
