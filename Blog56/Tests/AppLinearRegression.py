@@ -1,7 +1,7 @@
 '''test train mô hình máy học, cũng như prediction'''
 
-from Blog56.Connectors.Connector import Connector
-from Blog56.Models.PurchaseLinearRegression import PurchaseLinearRegression
+from ML_K224161818.Blog56.Connectors.Connector import Connector
+from ML_K224161818.Blog56.Models.PurchaseLinearRegression import PurchaseLinearRegression
 
 connector=Connector(server="localhost",port=3306,database="lecturer_retails",username="root",password="1234")
 connector.connect()

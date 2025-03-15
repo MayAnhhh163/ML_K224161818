@@ -1,5 +1,5 @@
 '''nạp mô hình từ ổ cứng , cũng như prediction'''
-from Blog56.Models.PurchaseLinearRegression import PurchaseLinearRegression
+from ML_K224161818.Blog56.Models.PurchaseLinearRegression import PurchaseLinearRegression
 
 pm=PurchaseLinearRegression()
 pm.loadModel("..//Assets/TrainedModel_GenderAgePayment.zip")

@@ -15,7 +15,9 @@ class Connector:
                 port=self.port,
                 database=self.database,
                 user=self.username,
-                password=self.password)
+                password=self.password,
+                auth_plugin='mysql_native_password'
+            )
             return self.conn
         except:
             self.conn=None

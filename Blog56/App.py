@@ -1,6 +1,6 @@
 from PyQt6.QtWidgets import QApplication, QMainWindow
 
-from K224161818_ML.Blog56.UI.MainWindowEx import MainWindowEx
+from ML_K224161818.Blog56.UI.MainWindowEx import MainWindowEx
 
 qApp=QApplication([])
 qmainWindow=QMainWindow()

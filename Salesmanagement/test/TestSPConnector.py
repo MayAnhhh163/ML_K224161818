@@ -1,4 +1,4 @@
-from Salesmanagement.libs.sanphamconnector import SanPhamConnector
+from ML_K224161818.Salesmanagement.libs.sanphamconnector import SanPhamConnector
 
 spc=SanPhamConnector()
 spc.connect()

@@ -1,4 +1,4 @@
-from Salesmanagement.libs.danhmucconnector import DanhMucConnector
+from ML_K224161818.Salesmanagement.libs.danhmucconnector import DanhMucConnector
 
 dmc=DanhMucConnector()
 dmc.connect()

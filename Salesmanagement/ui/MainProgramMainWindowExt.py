@@ -1,7 +1,7 @@
 from PyQt6.QtWidgets import QMainWindow
 
-from Salesmanagement.ui.MainProgramMainWindow import Ui_MainWindow
-from Salesmanagement.ui.ProductMainWindowExt import ProductMainWindowExt
+from ML_K224161818.Salesmanagement.ui.MainProgramMainWindow import Ui_MainWindow
+from ML_K224161818.Salesmanagement.ui.ProductMainWindowExt import ProductMainWindowExt
 
 
 class MainProgramMainWindowExt(Ui_MainWindow):

@@ -1,9 +1,9 @@
 from PyQt6.QtCore import Qt
 from PyQt6.QtWidgets import QListWidgetItem, QTableWidgetItem, QMessageBox
 
-from Salesmanagement.libs.danhmucconnector import DanhMucConnector
-from Salesmanagement.libs.sanphamconnector import SanPhamConnector
-from Salesmanagement.ui.ProductMainWindow import Ui_MainWindow
+from ML_K224161818.Salesmanagement.libs.danhmucconnector import DanhMucConnector
+from ML_K224161818.Salesmanagement.libs.sanphamconnector import SanPhamConnector
+from ML_K224161818.Salesmanagement.ui.ProductMainWindow import Ui_MainWindow
 
 
 class ProductMainWindowExt(Ui_MainWindow):
