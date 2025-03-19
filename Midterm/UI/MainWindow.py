@@ -1,4 +1,4 @@
-# Form implementation generated from reading ui file 'D:\mhe\ML_K224161818\midterm_thamkhao\MainWindow.ui'
+# Form implementation generated from reading ui file 'D:\mhe\ML_K224161818\Midterm\UI\MainWindow.ui'
 #
 # Created by: PyQt6 UI code generator 6.8.1
 #
@@ -7,7 +7,6 @@
 
 
 from PyQt6 import QtCore, QtGui, QtWidgets
-
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
